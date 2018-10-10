@@ -564,7 +564,7 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: AlphaRelease
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: C:\Users\Nicholas Keuning\Documents\495\AlphaRelease\Assets\WSATestCertificate.pfx
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
