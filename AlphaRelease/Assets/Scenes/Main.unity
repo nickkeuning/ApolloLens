@@ -2654,7 +2654,7 @@ VideoPlayer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1343566612}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 400d75fbd30ac1e439ba92615df2d0c9, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: fdac1aeea10997346bd58873348ce210, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -2664,14 +2664,14 @@ VideoPlayer:
   m_TargetMaterialProperty: _MainTex
   m_RenderMode: 3
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
   - {fileID: 1343566618}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
