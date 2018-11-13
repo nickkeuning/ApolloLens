@@ -15781,12 +15781,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\repos\\AlphaRelease\\UnityBuild\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
+      "projectUniqueName": "C:\\Users\\Nicholas Keuning\\Documents\\495\\ApolloLens\\BetaRelease\\UnityBuild\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
       "projectName": "Assembly-CSharp",
-      "projectPath": "C:\\repos\\AlphaRelease\\UnityBuild\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
-      "projectJsonPath": "C:\\repos\\AlphaRelease\\UnityBuild\\GeneratedProjects\\UWP\\Assembly-CSharp\\project.json",
+      "projectPath": "C:\\Users\\Nicholas Keuning\\Documents\\495\\ApolloLens\\BetaRelease\\UnityBuild\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
+      "projectJsonPath": "C:\\Users\\Nicholas Keuning\\Documents\\495\\ApolloLens\\BetaRelease\\UnityBuild\\GeneratedProjects\\UWP\\Assembly-CSharp\\project.json",
       "packagesPath": "C:\\Users\\Nicholas Keuning\\.nuget\\packages\\",
-      "outputPath": "C:\\repos\\AlphaRelease\\UnityBuild\\GeneratedProjects\\UWP\\Assembly-CSharp\\obj\\",
+      "outputPath": "C:\\Users\\Nicholas Keuning\\Documents\\495\\ApolloLens\\BetaRelease\\UnityBuild\\GeneratedProjects\\UWP\\Assembly-CSharp\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\Nicholas Keuning\\AppData\\Roaming\\NuGet\\NuGet.Config",

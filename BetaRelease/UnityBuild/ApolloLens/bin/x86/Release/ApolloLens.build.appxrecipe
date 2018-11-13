@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ae3f7efb-304d-498c-bd23-fc1a8a365093</PackageIdentityName>
     <PackageIdentityPublisher>CN=DefaultCompany</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\repos\AlphaRelease\UnityBuild\ApolloLens\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\obj\x86\Release\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\repos\AlphaRelease\UnityBuild\ApolloLens\bin\x86\Release\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\bin\x86\Release\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\bin\x86\Release\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\bin\x86\Release\ApolloLens.exe">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\bin\x86\Release\ApolloLens.exe">
       <PackagePath>entrypoint\ApolloLens.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nicholas Keuning\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
@@ -349,13 +349,13 @@
     <AppxPackagedFile Include="C:\Program Files\Unity_4.1\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityEngineProxy.dll">
       <PackagePath>UnityEngineProxy.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Unprocessed\WinRTLegacy.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Unprocessed\WinRTLegacy.dll">
       <PackagePath>WinRTLegacy.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Org.WebRtc.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Org.WebRtc.dll">
       <PackagePath>Org.WebRtc.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\WebRtcScheme.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\WebRtcScheme.dll">
       <PackagePath>WebRtcScheme.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Unity_4.1\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityPlayer.dll">
@@ -370,7 +370,7 @@
     <AppxPackagedFile Include="C:\Program Files\Unity_4.1\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\BridgeInterface.winmd">
       <PackagePath>BridgeInterface.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Org.WebRtc.winmd">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Org.WebRtc.winmd">
       <PackagePath>Org.WebRtc.winmd</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Unity_4.1\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityEngineDelegates.winmd">
@@ -379,272 +379,269 @@
     <AppxPackagedFile Include="C:\Program Files\Unity_4.1\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityPlayer.winmd">
       <PackagePath>UnityPlayer.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\WebRtcScheme.winmd">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\WebRtcScheme.winmd">
       <PackagePath>WebRtcScheme.winmd</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Unity_4.1\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\WinRTBridge.winmd">
       <PackagePath>WinRTBridge.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Resource.res">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Resource.res">
       <PackagePath>Resource.res</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\PlaneFinding.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\PlaneFinding.dll">
       <PackagePath>PlaneFinding.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\MicStreamSelector.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\MicStreamSelector.dll">
       <PackagePath>MicStreamSelector.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\GpuTiming.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\GpuTiming.dll">
       <PackagePath>GpuTiming.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\SharingClient.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\SharingClient.dll">
       <PackagePath>SharingClient.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\SpatialUnderstanding.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\SpatialUnderstanding.dll">
       <PackagePath>SpatialUnderstanding.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\MediaEngineUWP.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\MediaEngineUWP.dll">
       <PackagePath>MediaEngineUWP.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Data\boot.config">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Data\globalgamemanagers">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Data\level0">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Data\level0">
       <PackagePath>Data\level0</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Data\Resources\unity default resources">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Data\Resources\unity_builtin_extra">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Data\globalgamemanagers.assets">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Data\sharedassets0.assets">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Data\managedAssemblies.txt">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Data\nativePlugins.txt">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Data\sharedassets0.assets.resS">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Data\sharedassets0.resource">
-      <PackagePath>Data\sharedassets0.resource</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\bin\x86\Release\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.TerrainPhysicsModule.dll">
-      <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.TerrainModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.StyleSheetsModule.dll">
-      <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.TerrainPhysicsModule.dll">
+      <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.TextRenderingModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.TilemapModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.SharedInternalsModule.dll">
-      <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.StyleSheetsModule.dll">
+      <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.ScreenCaptureModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.PhysicsModule.dll">
-      <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.SharedInternalsModule.dll">
+      <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.SpriteShapeModule.dll">
-      <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.SpriteMaskModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.UIElementsModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.SpriteShapeModule.dll">
+      <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.VideoModule.dll">
-      <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.VehiclesModule.dll">
-      <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.UnityWebRequestWWWModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.VRModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.VehiclesModule.dll">
+      <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.VideoModule.dll">
+      <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.WindModule.dll">
-      <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.WebModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.UnityAnalyticsModule.dll">
-      <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.WindModule.dll">
+      <PackagePath>UnityEngine.WindModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.UNETModule.dll">
-      <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.UIModule.dll">
-      <PackagePath>UnityEngine.UIModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.UnityConnectModule.dll">
-      <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.UnityWebRequestTextureModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.UnityWebRequestModule.dll">
-      <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.UIModule.dll">
+      <PackagePath>UnityEngine.UIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.UnityWebRequestAudioModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.UNETModule.dll">
+      <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.UnityAnalyticsModule.dll">
+      <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.UnityConnectModule.dll">
+      <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.ARModule.dll">
-      <PackagePath>UnityEngine.ARModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.UnityWebRequestModule.dll">
+      <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.AnimationModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.PhysicsModule.dll">
+      <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.AssetBundleModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.ARModule.dll">
+      <PackagePath>UnityEngine.ARModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.AssetBundleModule.dll">
       <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.CoreModule.dll">
-      <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.ClothModule.dll">
-      <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.AudioModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.AIModule.dll">
-      <PackagePath>UnityEngine.AIModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.ClothModule.dll">
+      <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.AccessibilityModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.CoreModule.dll">
+      <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.CrashReportingModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.AIModule.dll">
+      <PackagePath>UnityEngine.AIModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.JSONSerializeModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.InputModule.dll">
-      <PackagePath>UnityEngine.InputModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.ParticlesLegacyModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.Physics2DModule.dll">
-      <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.PerformanceReportingModule.dll">
-      <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.ParticleSystemModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.GameCenterModule.dll">
-      <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.PerformanceReportingModule.dll">
+      <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.dll">
-      <PackagePath>UnityEngine.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.Physics2DModule.dll">
+      <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.DirectorModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.InputModule.dll">
+      <PackagePath>UnityEngine.InputModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.GridModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.dll">
+      <PackagePath>UnityEngine.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.GameCenterModule.dll">
+      <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.IMGUIModule.dll">
-      <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.ImageConversionModule.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.IMGUIModule.dll">
+      <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.Timeline.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\nunit.framework.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.UI.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\PeerConnectionClientCore.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\PeerConnectionClientCore.dll">
       <PackagePath>PeerConnectionClientCore.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.SpatialTracking.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.SpatialTracking.dll">
       <PackagePath>UnityEngine.SpatialTracking.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.Analytics.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.HoloLens.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.StandardEvents.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.StandardEvents.dll">
       <PackagePath>UnityEngine.StandardEvents.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\UnityEngine.Networking.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\GLTFSerializationUWP.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\GLTFSerializationUWP.dll">
       <PackagePath>GLTFSerializationUWP.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\Assembly-CSharp.dll">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\repos\AlphaRelease\UnityBuild\ApolloLens\bin\x86\Release\Core\ApolloLens.exe">
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\bin\x86\Release\Core\ApolloLens.exe">
       <PackagePath>ApolloLens.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

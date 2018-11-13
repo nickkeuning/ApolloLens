@@ -15856,12 +15856,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\repos\\AlphaRelease\\UnityBuild\\ApolloLens\\ApolloLens.csproj",
+      "projectUniqueName": "C:\\Users\\Nicholas Keuning\\Documents\\495\\ApolloLens\\BetaRelease\\UnityBuild\\ApolloLens\\ApolloLens.csproj",
       "projectName": "ApolloLens",
-      "projectPath": "C:\\repos\\AlphaRelease\\UnityBuild\\ApolloLens\\ApolloLens.csproj",
-      "projectJsonPath": "C:\\repos\\AlphaRelease\\UnityBuild\\ApolloLens\\project.json",
+      "projectPath": "C:\\Users\\Nicholas Keuning\\Documents\\495\\ApolloLens\\BetaRelease\\UnityBuild\\ApolloLens\\ApolloLens.csproj",
+      "projectJsonPath": "C:\\Users\\Nicholas Keuning\\Documents\\495\\ApolloLens\\BetaRelease\\UnityBuild\\ApolloLens\\project.json",
       "packagesPath": "C:\\Users\\Nicholas Keuning\\.nuget\\packages\\",
-      "outputPath": "C:\\repos\\AlphaRelease\\UnityBuild\\ApolloLens\\obj\\",
+      "outputPath": "C:\\Users\\Nicholas Keuning\\Documents\\495\\ApolloLens\\BetaRelease\\UnityBuild\\ApolloLens\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\Nicholas Keuning\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -15874,8 +15874,8 @@
       "frameworks": {
         "uap10.0.10240": {
           "projectReferences": {
-            "C:\\repos\\AlphaRelease\\UnityBuild\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
-              "projectPath": "C:\\repos\\AlphaRelease\\UnityBuild\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj"
+            "C:\\Users\\Nicholas Keuning\\Documents\\495\\ApolloLens\\BetaRelease\\UnityBuild\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
+              "projectPath": "C:\\Users\\Nicholas Keuning\\Documents\\495\\ApolloLens\\BetaRelease\\UnityBuild\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj"
             }
           }
         }
