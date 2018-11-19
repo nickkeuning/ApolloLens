@@ -60,7 +60,7 @@ namespace HoloToolkit.Unity.UX
 
         private GameObject objectToBound;
 
-        private AppBar appBarInstance;
+        private AppBar appBarInstance = null;
 
         private GameObject[] rotateHandles;
 
@@ -218,6 +218,20 @@ namespace HoloToolkit.Unity.UX
             UpdateRotateHandles();
             ParentHandles();
             UpdateHandles();
+        }
+
+
+        public void ShowAppBar()
+        {
+            if (appBarInstance != null)
+            {
+                appBarInstance.gameObject.SetActive(true);
+            }            
+        }
+
+        public void HideAppBar()
+        {
+            appBarInstance.gameObject.SetActive(false);
         }
 
         private void UpdateCornerHandles()

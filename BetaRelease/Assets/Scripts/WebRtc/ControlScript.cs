@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
 
+
 #if !UNITY_EDITOR
 using Windows.UI.Core;
 using Windows.Foundation;
@@ -32,6 +33,8 @@ public class ControlScript : MonoBehaviour
     //public Button CallButton;
     public RectTransform PeerContent;
     public GameObject TextItemPreftab;
+
+    public TextAsset Config;
 
     private enum Status
     {
@@ -83,7 +86,13 @@ public class ControlScript : MonoBehaviour
         Conductor.Instance.Initialize(CoreApplication.MainView.CoreWindow.Dispatcher);
         Conductor.Instance.EnableLogging(Conductor.LogLevel.Verbose);
 #endif
-        ServerAddressInputField.text = "10.0.0.192";
+        ServerAddressInputField.text = GetIPAddress();
+    }
+
+
+    private string GetIPAddress()
+    {
+        return PlayerPrefs.GetString("StreamingIP", "10.0.0.192");
     }
 
     private void OnEnable()
@@ -273,6 +282,7 @@ public class ControlScript : MonoBehaviour
         {
             if (status == Status.NotConnected)
             {
+                PlayerPrefs.SetString("StreamingIP", ServerAddressInputField.text);
                 new Task(() =>
                 {
                     Conductor.Instance.StartLogin(ServerAddressInputField.text, "8888");

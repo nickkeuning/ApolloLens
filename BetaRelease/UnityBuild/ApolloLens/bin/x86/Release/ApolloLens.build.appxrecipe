@@ -463,6 +463,9 @@
     <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Keuning\Documents\495\ApolloLens\BetaRelease\UnityBuild\ApolloLens\Data\sharedassets0.resource">
+      <PackagePath>Data\sharedassets0.resource</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>

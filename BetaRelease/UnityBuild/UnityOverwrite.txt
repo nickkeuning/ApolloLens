@@ -6,7 +6,7 @@
 # Write a line equal to 'keep-all' (without quotes) to keep files regardless their modification (preserved accross builds)
 # Default behavior is to never overwrite files
 ApolloLens.sln: modified
-ApolloLens\ApolloLens.csproj: 8D2214ED0CE693879FE65234A0025398
+ApolloLens\ApolloLens.csproj: D6B8002B39AA1C5AD1F072AF8BE28ABA
 ApolloLens\ApolloLens.csproj.user: modified
 ApolloLens\App.cs: E6721E7602EE75D1C3A40E887D8C2BB0
 ApolloLens\Package.appxmanifest: modified

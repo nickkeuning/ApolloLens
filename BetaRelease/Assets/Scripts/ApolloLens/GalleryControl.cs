@@ -5,6 +5,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Collections;
 
 
 #if WINDOWS_UWP
@@ -16,10 +17,16 @@ using Windows.Storage.Streams;
 public class GalleryControl : MonoBehaviour {
 
     public RawImage Image;
+    public GameObject Dropdown;
+    private Dropdown DropdownScript;
+
 
     private List<string> SubFolderNames;
     private string CurrentFolder;
     private int CurrentIndex;
+    private Dictionary<string, int> IndexInFolder = new Dictionary<string, int>();
+
+    private IEnumerator ScrollCoroutine;
 
 #if WINDOWS_UWP
     private Dictionary<string, List<StorageFile>> ImageFileDict = new Dictionary<string, List<StorageFile>>();
@@ -27,13 +34,82 @@ public class GalleryControl : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-#if WINDOWS_UWP
         Initialize();
-#endif
     }
 
     // Update is called once per frame
     void Update() { }
+
+
+    void SetupDropdown()
+    {
+        DropdownScript = Dropdown.GetComponent<Dropdown>();
+        DropdownScript.ClearOptions();
+
+        foreach (string SubFolderName in SubFolderNames)
+        {
+            Dropdown.OptionData optionData = new Dropdown.OptionData();
+            optionData.text = SubFolderName;
+            DropdownScript.options.Add(optionData);
+
+            IndexInFolder[SubFolderName] = 0;
+        }
+
+        DropdownScript.RefreshShownValue();
+    }
+
+    public void ChangeDirectoryDropdown()
+    {
+        string DirectoryName = SubFolderNames[DropdownScript.value];
+        ChangeDirectory(DirectoryName);
+    }
+
+    public void ChangeDirectoryKeyword(string DirectoryName)
+    {
+        DropdownScript.value = SubFolderNames.IndexOf(DirectoryName);
+        DropdownScript.RefreshShownValue();
+        ChangeDirectory(DirectoryName);        
+    }
+
+    private void ChangeDirectory(string DirectoryName)
+    {
+        if (DirectoryName != CurrentFolder)
+        {
+            IndexInFolder[CurrentFolder] = CurrentIndex;
+            CurrentIndex = IndexInFolder[DirectoryName];
+            CurrentFolder = DirectoryName;
+            SetTexture();
+        }
+    }
+
+    public void StartHold(int Direction)
+    {
+        ScrollCoroutine = ScrollMethod(Direction);
+        StartCoroutine(ScrollCoroutine);
+    }
+
+
+    public void StopHold()
+    {
+        StopCoroutine(ScrollCoroutine);
+    }
+
+    private IEnumerator ScrollMethod(int Direction)
+    {
+        float WaitTime = 0.3f;
+        int NumImages = 0;
+        while (true)
+        {
+            MoveImage(Direction);
+            NumImages++;
+            if (NumImages == 5)
+            {
+                WaitTime /= 2;
+            }
+            yield return new WaitForSeconds(WaitTime);
+        }
+    }
+
 
     public void MoveImage(int Amount)
     {
@@ -55,9 +131,40 @@ public class GalleryControl : MonoBehaviour {
 #endif
     }
 
+    public void FirstImage()
+    {
+        CurrentIndex = 0;
+        SetTexture();
+    }
+
+    public void LastImage()
+    {
 #if WINDOWS_UWP
+        CurrentIndex = ImageFileDict[CurrentFolder].Count - 1;
+        SetTexture();
+#endif
+    }
+
+    public void MiddleImage()
+    {
+#if WINDOWS_UWP
+        CurrentIndex = ImageFileDict[CurrentFolder].Count / 2;
+        SetTexture();
+#endif
+    }
+
+
     private async void Initialize()
     {
+#if WINDOWS_UWP
+        await GetFiles();
+        SetTexture();
+        SetupDropdown();
+#endif
+    }
+
+    private async Task GetFiles(){
+#if WINDOWS_UWP
         // get and store all subfolders of Pictures/Surgery
         StorageFolder SurgeryFolder = await KnownFolders.PicturesLibrary.GetFolderAsync("Surgery");
         var SubFolders = await SurgeryFolder.GetFoldersAsync();
@@ -66,20 +173,22 @@ public class GalleryControl : MonoBehaviour {
         // get and store all files in each subdirectory
         foreach (StorageFolder folder in SubFolders)
         {
-            var ImagesFiles = await folder.GetFilesAsync();
-            ImageFileDict[folder.Name] = ImagesFiles.ToList();
+            var ImageFiles = await folder.GetFilesAsync();
+            if (ImageFiles.Count != 0)
+            {
+                ImageFileDict[folder.Name] = ImageFiles.ToList();
+            }            
         }
 
         // set current folder and image index within folder
         CurrentFolder = SubFolderNames.First();
         CurrentIndex = 0;
-
-        // set image to current image
-        SetTexture();
+#endif
     }
 
     private async void SetTexture()
     {
+#if WINDOWS_UWP
         // get the storage file corresponding to current image
         StorageFile ImageFile = ImageFileDict[CurrentFolder][CurrentIndex];
 
@@ -92,13 +201,15 @@ public class GalleryControl : MonoBehaviour {
 
         // set image texture to newly created texture
         Image.texture = ImageTexture;
+#endif
     }
 
+#if WINDOWS_UWP
     private static async Task<byte[]> GetBytesAsync(StorageFile file)
     {
         IBuffer buffer = await FileIO.ReadBufferAsync(file);
-        byte[] bytes = buffer.ToArray();
-        return bytes;
+        return buffer.ToArray();
     }
 #endif
+
 }

@@ -72,6 +72,7 @@ namespace HoloToolkit.Examples.InteractiveElements
         public UnityEvent OnSelectEvents;
         public UnityEvent OnDownEvent;
         public UnityEvent OnHoldEvent;
+        public UnityEvent OnUpEvent;
 
         /// <summary>
         /// A button typically has 8 potential states.
@@ -296,6 +297,8 @@ namespace HoloToolkit.Examples.InteractiveElements
             mCheckRollOff = false;
 
             UpdateEffects();
+
+            OnUpEvent.Invoke();
         }
 
         /// <summary>

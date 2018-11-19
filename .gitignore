@@ -38,3 +38,7 @@ sysinfo.txt
 
 # Local builds
 Build/*
+*UnityBuild/*
+
+*.mp4
+*sharedassets*
