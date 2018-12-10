@@ -2658,7 +2658,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Image: {fileID: 1602686166}
   Dropdown: {fileID: 1940316776}
-  GalleryKeyword: {fileID: 634888539}
 --- !u!1 &416834945
 GameObject:
   m_ObjectHideFlags: 0
@@ -4256,7 +4255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PersistentKeywords: 0
-  RecognizerStart: 1
+  RecognizerStart: 0
   Keywords:
   - Keyword: First Image
     KeyCode: 0

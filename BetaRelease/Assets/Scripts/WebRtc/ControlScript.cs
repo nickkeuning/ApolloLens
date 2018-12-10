@@ -123,16 +123,8 @@ public class ControlScript : MonoBehaviour
         var ConnectAndCall = Task.Run(() =>
         {
             System.Threading.SpinWait.SpinUntil(() => ConductorInitialized);
-            //if (status != Status.Connected)
-            //{
             OnConnectClick();
-            //}
-            System.Threading.SpinWait.SpinUntil(() => status != Status.Connecting);
-            if (status != Status.Connected)
-            {
-                MainMenuButtonScript.IsEnabled = true;
-                return;
-            }
+            System.Threading.SpinWait.SpinUntil(() => status == Status.Connected);
             OnCallClick();
             System.Threading.SpinWait.SpinUntil(() => status == Status.InCall);
             MainMenuButtonScript.IsEnabled = true;
@@ -152,7 +144,7 @@ public class ControlScript : MonoBehaviour
         var HangupAndDisconnect = Task.Run(() =>
         {
             OnCallClick();
-            System.Threading.SpinWait.SpinUntil(() => status != Status.EndingCall);
+            System.Threading.SpinWait.SpinUntil(() => status == Status.Connected);
             OnConnectClick();
             System.Threading.SpinWait.SpinUntil(() => status == Status.NotConnected);
             MainMenuButtonScript.IsEnabled = true;
