@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Collections;
-
+using HoloToolkit.Unity.InputModule;
 
 #if WINDOWS_UWP
 using Windows.Storage;
@@ -17,8 +17,12 @@ using Windows.Storage.Streams;
 public class GalleryControl : MonoBehaviour {
 
     public RawImage Image;
+
     public GameObject Dropdown;
     private Dropdown DropdownScript;
+
+    public GameObject GalleryKeyword;
+    private SpeechInputSource GalleryKeywordScript;
 
 
     private List<string> SubFolderNames;
@@ -35,10 +39,21 @@ public class GalleryControl : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Initialize();
+        GalleryKeywordScript = GalleryKeyword.GetComponent<SpeechInputSource>();
     }
 
     // Update is called once per frame
     void Update() { }
+
+    private void OnEnable()
+    {
+        GalleryKeywordScript.StartKeywordRecognizer();
+    }
+
+    private void OnDisable()
+    {
+        GalleryKeywordScript.StopKeywordRecognizer();
+    }
 
 
     void SetupDropdown()
@@ -200,6 +215,7 @@ public class GalleryControl : MonoBehaviour {
         ImageTexture.LoadImage(ImageBytes);
 
         // set image texture to newly created texture
+        Destroy(Image.texture);
         Image.texture = ImageTexture;
 #endif
     }
