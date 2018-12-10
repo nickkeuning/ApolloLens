@@ -4173,7 +4173,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Last Image
+  - Keyword: Final Image
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -4259,7 +4259,7 @@ MonoBehaviour:
   Keywords:
   - Keyword: First Image
     KeyCode: 0
-  - Keyword: Last Image
+  - Keyword: Final Image
     KeyCode: 0
   - Keyword: Middle Image
     KeyCode: 0
