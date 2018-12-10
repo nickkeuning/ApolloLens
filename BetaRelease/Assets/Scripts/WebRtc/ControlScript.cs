@@ -123,19 +123,41 @@ public class ControlScript : MonoBehaviour
         var ConnectAndCall = Task.Run(() =>
         {
             System.Threading.SpinWait.SpinUntil(() => ConductorInitialized);
+            //if (status != Status.Connected)
+            //{
             OnConnectClick();
+            //}
+            System.Threading.SpinWait.SpinUntil(() => status != Status.Connecting);
+            if (status != Status.Connected)
+            {
+                MainMenuButtonScript.IsEnabled = true;
+                return;
+            }
+            OnCallClick();
+            System.Threading.SpinWait.SpinUntil(() => status == Status.InCall);
+            MainMenuButtonScript.IsEnabled = true;
         });
 #endif
     }
 
     private void OnDisable()
     {
+        MainMenuButtonScript.IsEnabled = false;
         LocalVideoImage.texture = null;
         Plugin.ReleaseLocalMediaPlayback();
         RemoteVideoImage.texture = null;
-        Plugin.ReleaseRemoteMediaPlayback();
-        MainMenuButtonScript.IsEnabled = false;
-        OnCallClick();
+        Plugin.ReleaseRemoteMediaPlayback();        
+        //OnCallClick();
+#if !UNITY_EDITOR
+        var HangupAndDisconnect = Task.Run(() =>
+        {
+            OnCallClick();
+            System.Threading.SpinWait.SpinUntil(() => status != Status.EndingCall);
+            OnConnectClick();
+            System.Threading.SpinWait.SpinUntil(() => status == Status.NotConnected);
+            MainMenuButtonScript.IsEnabled = true;
+        });
+#endif
     }
 
     private void Update()
@@ -419,7 +441,7 @@ public class ControlScript : MonoBehaviour
                     if (status == Status.Connecting)
                     {
                         status = Status.Connected;
-                        OnCallClick();
+                        //OnCallClick();
                         commandQueue.Add(new Command { type = CommandType.SetConnected });
                     }
                     else
@@ -461,7 +483,7 @@ public class ControlScript : MonoBehaviour
                     if (status == Status.Disconnecting)
                     {
                         status = Status.NotConnected;
-                        MainMenuButtonScript.IsEnabled = true;
+                        //MainMenuButtonScript.IsEnabled = true;
                         commandQueue.Add(new Command { type = CommandType.SetNotConnected });
                     }
                     else
@@ -508,7 +530,7 @@ public class ControlScript : MonoBehaviour
                         Plugin.UnloadLocalMediaStreamSource();
                         Plugin.UnloadRemoteMediaStreamSource();
                         status = Status.Connected;
-                        OnConnectClick();
+                        //OnConnectClick();
                         commandQueue.Add(new Command { type = CommandType.SetConnected });
                     }
                     else
@@ -593,7 +615,7 @@ public class ControlScript : MonoBehaviour
                     else
                         source = Conductor.Instance.CreateRemoteMediaStreamSource("I420");
                     Plugin.LoadRemoteMediaStreamSource((MediaStreamSource)source);
-                    MainMenuButtonScript.IsEnabled = true;
+                    //MainMenuButtonScript.IsEnabled = true;
                 }
                 else
                 {
