@@ -19,7 +19,7 @@ public class SettingsControl : MonoBehaviour {
 
     private string GetIPAddress()
     {
-        return PlayerPrefs.GetString("StreamingIP", "10.0.0.192");
+        return PlayerPrefs.GetString("StreamingIP", "35.3.33.251");
     }
 
     public void OnAddressChanged()

@@ -6746,8 +6746,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LiveStreamPrefab: {fileID: 224097168997131488, guid: 94e5a8c78d1fab140bfa461fd570653c,
     type: 2}
-  MainMenuButton: {fileID: 0}
-  ServerAddressInputField: {fileID: 0}
+  MainMenuButton: {fileID: 741405168}
+  MainMenuButtonScript: {fileID: 0}
+  ServerAddressInputField: {fileID: 59931869}
+  ServerAddress: 
 --- !u!1 &1290889786
 GameObject:
   m_ObjectHideFlags: 0

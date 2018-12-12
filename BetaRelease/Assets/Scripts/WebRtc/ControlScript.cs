@@ -29,10 +29,10 @@ public class ControlScript : MonoBehaviour
     public RawImage LocalVideoImage;
     public RawImage RemoteVideoImage;
 
-    public GameObject MainMenuButton;
-    private InteractiveToggle MainMenuButtonScript;
-    public InputField ServerAddressInputField;
     bool ConductorInitialized;
+
+    public Master MasterScript = null;
+    public string ServerAddress = null;
 
     private enum Status
     {
@@ -65,17 +65,6 @@ public class ControlScript : MonoBehaviour
 
     private Status status = Status.NotConnected;
     private List<Command> commandQueue = new List<Command>();
-    private string serverAddress;
-
-    public ControlScript()
-    {
-    }
-
-    void Awake()
-    {
-        serverAddress = PlayerPrefs.GetString("StreamingIP", "10.0.0.192");
-        MainMenuButtonScript = MainMenuButton.GetComponent<InteractiveToggle>();
-    }
 
     void Start()
     {
@@ -89,20 +78,8 @@ public class ControlScript : MonoBehaviour
 #endif
     }
 
-    public void Launch()
-    {
-        return;
-    }
-
-    public void Shutdown()
-    {
-
-    }
-
     private void OnEnable()
     {
-        MainMenuButtonScript.IsEnabled = false;
-        if (ServerAddressInputField.text != "")  {serverAddress = ServerAddressInputField.text; }
         {
             Plugin.CreateLocalMediaPlayback();
             IntPtr nativeTex = IntPtr.Zero;
@@ -118,36 +95,36 @@ public class ControlScript : MonoBehaviour
             var primaryPlaybackTexture = Texture2D.CreateExternalTexture((int)RemoteTextureWidth, (int)RemoteTextureHeight, TextureFormat.BGRA32, false, false, nativeTex);
             RemoteVideoImage.texture = primaryPlaybackTexture;
         }
+    }
 
+    public void StartCall(Master _masterScript)
+    {
+        MasterScript = _masterScript;
 #if !UNITY_EDITOR
         var ConnectAndCall = Task.Run(() =>
         {
-            System.Threading.SpinWait.SpinUntil(() => ConductorInitialized);
-            //if (status != Status.Connected)
-            //{
+            System.Threading.SpinWait.SpinUntil(() => ConductorInitialized, 5000);
             OnConnectClick();
-            //}
-            System.Threading.SpinWait.SpinUntil(() => status != Status.Connecting);
+            System.Threading.SpinWait.SpinUntil(() => status == Status.Connected, 5000);
             if (status != Status.Connected)
             {
-                MainMenuButtonScript.IsEnabled = true;
+                MasterScript.MainMenuButtonScript.IsEnabled = true;
                 return;
             }
             OnCallClick();
-            System.Threading.SpinWait.SpinUntil(() => status == Status.InCall);
-            MainMenuButtonScript.IsEnabled = true;
+            System.Threading.SpinWait.SpinUntil(() => status == Status.InCall, 5000);
+            MasterScript.MainMenuButtonScript.IsEnabled = true;
         });
 #endif
+
     }
 
     private void OnDisable()
     {
-        MainMenuButtonScript.IsEnabled = false;
         LocalVideoImage.texture = null;
         Plugin.ReleaseLocalMediaPlayback();
         RemoteVideoImage.texture = null;
-        Plugin.ReleaseRemoteMediaPlayback();        
-        //OnCallClick();
+        Plugin.ReleaseRemoteMediaPlayback();
 #if !UNITY_EDITOR
         var HangupAndDisconnect = Task.Run(() =>
         {
@@ -155,7 +132,7 @@ public class ControlScript : MonoBehaviour
             System.Threading.SpinWait.SpinUntil(() => status != Status.EndingCall);
             OnConnectClick();
             System.Threading.SpinWait.SpinUntil(() => status == Status.NotConnected);
-            MainMenuButtonScript.IsEnabled = true;
+            MasterScript.MainMenuButtonScript.IsEnabled = true;
         });
 #endif
     }
@@ -165,137 +142,9 @@ public class ControlScript : MonoBehaviour
 #if !UNITY_EDITOR
         lock (this)
         {
-            //switch (status)
-            //{
-            //    case Status.NotConnected:
-            //        if (!ServerAddressInputField.enabled)
-            //            ServerAddressInputField.enabled = true;
-            //        if (!ConnectButton.enabled)
-            //            ConnectButton.enabled = true;
-            //        if (CallButton.enabled)
-            //            CallButton.enabled = false;
-            //        break;
-            //    case Status.Connecting:
-            //        if (ServerAddressInputField.enabled)
-            //            ServerAddressInputField.enabled = false;
-            //        if (ConnectButton.enabled)
-            //            ConnectButton.enabled = false;
-            //        if (CallButton.enabled)
-            //            CallButton.enabled = false;
-            //        break;
-            //    case Status.Disconnecting:
-            //        if (ServerAddressInputField.enabled)
-            //            ServerAddressInputField.enabled = false;
-            //        if (ConnectButton.enabled)
-            //            ConnectButton.enabled = false;
-            //        if (CallButton.enabled)
-            //            CallButton.enabled = false;
-            //        break;
-            //    case Status.Connected:
-            //        if (ServerAddressInputField.enabled)
-            //            ServerAddressInputField.enabled = false;
-            //        if (!ConnectButton.enabled)
-            //            ConnectButton.enabled = true;
-            //        if (!CallButton.enabled)
-            //            CallButton.enabled = true;
-            //        break;
-            //    case Status.Calling:
-            //        if (ServerAddressInputField.enabled)
-            //            ServerAddressInputField.enabled = false;
-            //        if (ConnectButton.enabled)
-            //            ConnectButton.enabled = false;
-            //        if (CallButton.enabled)
-            //            CallButton.enabled = false;
-            //        break;
-            //    case Status.EndingCall:
-            //        if (ServerAddressInputField.enabled)
-            //            ServerAddressInputField.enabled = false;
-            //        if (ConnectButton.enabled)
-            //            ConnectButton.enabled = false;
-            //        if (CallButton.enabled)
-            //            CallButton.enabled = false;
-            //        break;
-            //    case Status.InCall:
-            //        if (ServerAddressInputField.enabled)
-            //            ServerAddressInputField.enabled = false;
-            //        if (ConnectButton.enabled)
-            //            ConnectButton.enabled = false;
-            //        if (!CallButton.enabled)
-            //            CallButton.enabled = true;
-            //        break;
-            //    default:
-            //        break;
-            //}
-
             while (commandQueue.Count != 0)
             {
-                Command command = commandQueue.First();
-                commandQueue.RemoveAt(0);
-                //switch (status)
-                //{
-                //    case Status.NotConnected:
-                //        if (command.type == CommandType.SetNotConnected)
-                //        {
-                //            ConnectButton.GetComponentInChildren<Text>().text = "Connect";
-                //            CallButton.GetComponentInChildren<Text>().text = "Call";
-                //        }
-                //        break;
-                //    case Status.Connected:
-                //        if (command.type == CommandType.SetConnected)
-                //        {
-                //            ConnectButton.GetComponentInChildren<Text>().text = "Disconnect";
-                //            CallButton.GetComponentInChildren<Text>().text = "Call";
-                //        }
-                //        break;
-                //    case Status.InCall:
-                //        if (command.type == CommandType.SetInCall)
-                //        {
-                //            ConnectButton.GetComponentInChildren<Text>().text = "Disconnect";
-                //            CallButton.GetComponentInChildren<Text>().text = "Hang Up";
-                //        }
-                //        break;
-                //    default:
-                //        break;
-                //}
-                //if (command.type == CommandType.AddRemotePeer)
-                //{
-                //    GameObject textItem = (GameObject)Instantiate(TextItemPreftab);
-                //    textItem.transform.SetParent(PeerContent);
-                //    textItem.GetComponent<Text>().text = command.remotePeer.Name;
-                //    EventTrigger trigger = textItem.GetComponentInChildren<EventTrigger>();
-                //    EventTrigger.Entry entry = new EventTrigger.Entry();
-                //    entry.eventID = EventTriggerType.PointerDown;
-                //    entry.callback.AddListener((data) => { OnRemotePeerItemClick((PointerEventData)data); });
-                //    trigger.triggers.Add(entry);
-                //    if (selectedPeerIndex == -1)
-                //    {
-                //        textItem.GetComponent<Text>().fontStyle = FontStyle.Bold;
-                //        selectedPeerIndex = PeerContent.transform.childCount - 1;
-                //    }
-                //}
-                //else if (command.type == CommandType.RemoveRemotePeer)
-                //{
-                //    for (int i = 0; i < PeerContent.transform.childCount; i++)
-                //    {
-                //        if (PeerContent.GetChild(i).GetComponent<Text>().text == command.remotePeer.Name)
-                //        {
-                //            PeerContent.GetChild(i).SetParent(null);
-                //            if (selectedPeerIndex == i)
-                //            {
-                //                if (PeerContent.transform.childCount > 0)
-                //                {
-                //                    PeerContent.GetChild(0).GetComponent<Text>().fontStyle = FontStyle.Bold;
-                //                    selectedPeerIndex = 0;
-                //                }
-                //                else
-                //                {
-                //                    selectedPeerIndex = -1;
-                //                }
-                //            }
-                //            break;
-                //        }
-                //    }
-                //}
+                commandQueue.Clear();
             }
         }
 #endif
@@ -323,7 +172,7 @@ public class ControlScript : MonoBehaviour
             {
                 new Task(() =>
                 {
-                    Conductor.Instance.StartLogin(serverAddress, "8888");
+                    Conductor.Instance.StartLogin(MasterScript.ServerAddress, "8888");
                 }).Start();
                 status = Status.Connecting;
             }
@@ -441,7 +290,6 @@ public class ControlScript : MonoBehaviour
                     if (status == Status.Connecting)
                     {
                         status = Status.Connected;
-                        //OnCallClick();
                         commandQueue.Add(new Command { type = CommandType.SetConnected });
                     }
                     else
@@ -483,7 +331,6 @@ public class ControlScript : MonoBehaviour
                     if (status == Status.Disconnecting)
                     {
                         status = Status.NotConnected;
-                        //MainMenuButtonScript.IsEnabled = true;
                         commandQueue.Add(new Command { type = CommandType.SetNotConnected });
                     }
                     else
@@ -530,7 +377,6 @@ public class ControlScript : MonoBehaviour
                         Plugin.UnloadLocalMediaStreamSource();
                         Plugin.UnloadRemoteMediaStreamSource();
                         status = Status.Connected;
-                        //OnConnectClick();
                         commandQueue.Add(new Command { type = CommandType.SetConnected });
                     }
                     else
