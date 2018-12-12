@@ -672,7 +672,7 @@ Prefab:
     - target: {fileID: 114413027011121168, guid: 07a21e96b95fd964fab0d28335ffd583,
         type: 2}
       propertyPath: KeywordRequiresGaze
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114413027011121168, guid: 07a21e96b95fd964fab0d28335ffd583,
         type: 2}
@@ -3433,7 +3433,7 @@ Prefab:
     - target: {fileID: 114413027011121168, guid: 07a21e96b95fd964fab0d28335ffd583,
         type: 2}
       propertyPath: KeywordRequiresGaze
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114413027011121168, guid: 07a21e96b95fd964fab0d28335ffd583,
         type: 2}
@@ -5933,7 +5933,7 @@ Prefab:
     - target: {fileID: 114413027011121168, guid: 07a21e96b95fd964fab0d28335ffd583,
         type: 2}
       propertyPath: KeywordRequiresGaze
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07a21e96b95fd964fab0d28335ffd583, type: 2}
@@ -6746,6 +6746,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LiveStreamPrefab: {fileID: 224097168997131488, guid: 94e5a8c78d1fab140bfa461fd570653c,
     type: 2}
+  MainMenuButton: {fileID: 0}
+  ServerAddressInputField: {fileID: 0}
 --- !u!1 &1290889786
 GameObject:
   m_ObjectHideFlags: 0
@@ -7127,7 +7129,7 @@ Prefab:
     - target: {fileID: 114413027011121168, guid: 07a21e96b95fd964fab0d28335ffd583,
         type: 2}
       propertyPath: KeywordRequiresGaze
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07a21e96b95fd964fab0d28335ffd583, type: 2}
