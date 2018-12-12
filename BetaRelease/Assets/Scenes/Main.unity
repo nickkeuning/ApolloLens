@@ -2439,7 +2439,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Image: {fileID: 1602686166}
   Dropdown: {fileID: 1940316776}
-  GalleryKeyword: {fileID: 634888539}
 --- !u!1 &416834945
 GameObject:
   m_ObjectHideFlags: 0
@@ -3955,7 +3954,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Last Image
+  - Keyword: Final Image
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -4037,11 +4036,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PersistentKeywords: 0
-  RecognizerStart: 1
+  RecognizerStart: 0
   Keywords:
   - Keyword: First Image
     KeyCode: 0
-  - Keyword: Last Image
+  - Keyword: Final Image
     KeyCode: 0
   - Keyword: Middle Image
     KeyCode: 0

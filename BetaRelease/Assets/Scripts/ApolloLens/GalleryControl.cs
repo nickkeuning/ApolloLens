@@ -21,9 +21,6 @@ public class GalleryControl : MonoBehaviour {
     public GameObject Dropdown;
     private Dropdown DropdownScript;
 
-    public GameObject GalleryKeyword;
-    private SpeechInputSource GalleryKeywordScript;
-
 
     private List<string> SubFolderNames;
     private string CurrentFolder;
@@ -39,21 +36,10 @@ public class GalleryControl : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Initialize();
-        GalleryKeywordScript = GalleryKeyword.GetComponent<SpeechInputSource>();
     }
 
     // Update is called once per frame
     void Update() { }
-
-    private void OnEnable()
-    {
-        GalleryKeywordScript.StartKeywordRecognizer();
-    }
-
-    private void OnDisable()
-    {
-        GalleryKeywordScript.StopKeywordRecognizer();
-    }
 
 
     void SetupDropdown()
